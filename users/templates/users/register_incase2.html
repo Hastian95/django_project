@@ -1,0 +1,95 @@
+{% extends "psinder/base.html" %}
+
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'users/register.css' %} ">
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+</head>
+<body>
+ <div class ="labelnew">
+
+
+<div class ="content-section">
+    <form method="POST">
+        {% csrf_token %}
+
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4"> Dołącz do nas!</legend>
+             {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class ="btn btn-outline-info" type="submit"> Sign Up</button>
+        </div>
+    </form>
+    <div class="borter-top pt-3">
+    <small class="text-muted">
+        Masz już konto ? <a class="ml-2" href="#">Zaloguj się</a>
+    </small>
+    </div>
+</div>
+
+</div>
+
+
+
+
+<style>
+
+
+.form-group{
+    color: black;
+    width: 100%; /* Dostosuj szerokość formularza według potrzeb */
+    margin: 5px 0; /* Aby umieścić formularz na środku strony */
+
+}
+
+.under-logo {
+       height: 1000px;
+       width: 100%;
+       background-size: auto;
+       background-position: left;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+
+      }
+
+
+</style>
+</body>
+{% endblock content %}
+
+
+<!--<body>-->
+<!-- <labelnew>-->
+<!--        <form method="POST">-->
+<!--        {% csrf_token %}-->
+<!--               -->
+<!--        <label for="username">Nazwa użytkownika:</label>-->
+<!--        <input type="text" name="username" id="username" required>-->
+<!--        <br>-->
+<!--        <label for="email">Adres email:</label>-->
+<!--        <input type="email" name="email" id="email" required>-->
+<!--        <br>-->
+<!--        <label for="password">Hasło:</label>-->
+<!--        <input type="password" name="password" id="password" required>-->
+<!--        <br>-->
+<!--        <label for="password_confirm">Potwierdź hasło:</label>-->
+<!--        <input type="password" name="password_confirm" id="password_confirm" required>-->
+<!--        <br>-->
+<!--        <input type="submit" value="Utwórz konto">-->
+<!--            </form>-->
+<!--</labelnew>-->
+<!--</body>-->
+
+
+
+
+
+

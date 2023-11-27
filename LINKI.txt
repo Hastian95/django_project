@@ -1,0 +1,10 @@
+HASŁA:
+Login: Pawel
+hasło: admin
+mail: hastia95@gmail.com
+
+1. Tworzenie nowego postu:
+https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
+
+2. Czyszczenie rejestracji
+https://www.pythontutorial.net/django-tutorial/django-registration/

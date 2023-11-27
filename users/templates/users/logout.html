@@ -1,0 +1,79 @@
+{% extends "psinder/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+<h2> Zostałeś wylogowany</h2>
+
+<br>
+    <div class="borter-top pt-3 ml-5">
+    <small class="text-muted">
+      <a class="btn btn-outline-info"  type="submit" href="{% url 'login' %}">Zaloguj się ponownie</a>
+    </small>
+    </div>
+
+
+<body>
+<style>
+
+h2 {
+    font-family: 'Garamond' !important;
+    text-align: center;
+    color: black !important;
+}
+.form-group {
+
+    margin: 0;
+    position: ;
+}
+
+.under-logo {
+       height: 1000px;
+       width: auto;
+       background-size: cover;
+       background-position: left;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+
+      }
+.btn btn-outline-info {
+color: rgb(244, 243, 163) !important;
+display: inline;
+}
+
+.btn {
+display: inline !important;
+}
+
+
+fieldset.form-group {
+    width:600px;
+    padding:20px;
+    margin: 20px;
+    border: 0;
+
+}
+
+body .text-muted {
+color: rgb(244, 243, 163) !important
+
+}
+
+borter-top pt-3 {
+text-align: center;
+
+}
+
+
+
+
+</style>
+</body>
+{% endblock content %}
+
+
+
+

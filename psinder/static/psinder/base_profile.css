@@ -1,0 +1,499 @@
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+
+        .description_container {
+          margin-top:80px;
+          /*font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+          font-family: 'Raleway', sans-serif;
+          padding-left:25px;
+          display:flex;
+          text-align: left;
+          width: 500px;
+          font-weight: 400;
+
+        }
+
+        .foot {
+          background-image: url('foot.png');
+          background-size:contain;
+          background-repeat: no-repeat;
+          background-position: 20%;
+
+          height:80px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+        .logowania {
+           margin-left:95%;
+          margin-top:0%;
+          justify-content: space-between;
+          display:grid;
+          font-family: 'Comfortaa', cursive;
+
+
+        }
+        .logowanie-kolor {
+          border-radius: 20px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0,2);
+
+          color: rgb(0, 0, 0);
+          font-family: Apple Chancery, cursive;
+        }
+
+        .logowania .btn-one:first-child {
+      margin-right: 10px;
+
+        }
+        .logowanie-kolor2 {
+          border-radius: 20px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0,2);
+          background-color: #fff;
+          color: rgb(0, 0, 0);
+          font-family:cursive;
+          display:inline-flex;
+          width:150px;
+          justify-content: center;
+
+
+
+        }
+        .main-menu {
+          border-radius: 10px;
+          font-size: 20px;
+          background-color: rgb(77, 122, 3);
+          color: rgb(0, 0, 0);
+          font-family:Georgia, 'Times New Roman', Times, serif
+
+        }
+      .navbar
+         {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+
+        }
+        .navbar-brand
+         {
+            font-family:cursive;
+            color: rgb(255, 255, 255);
+            font-size: 30px !important;
+
+
+
+        }
+
+
+        .btn-dark
+         {
+            font-family: Arial, sans-serif;
+            background-color: rgb(201, 255, 201);
+            color: rgb(0, 0, 0);
+            display: absolute;
+
+        }
+
+
+         .bg-tlo
+         {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(255, 255, 255);
+
+         }
+
+         .col-4
+         {
+          background-color: red;
+          border-width: 10px;
+          border-color: #333333;
+          border-style: solid;
+        }
+          .przyciski {
+
+          display:flex;
+
+          justify-content:LEFT;
+          align-items: center;
+          font-size: 20px;
+          background-color: ;           <!-- Tutaj dodać kolor naglówka, jeśli brak to jest od tła strony -->
+        }
+
+
+
+        .under-logo {
+       height: 700px; 1/4 wysokości strony
+       width: 100%;
+
+       background-size: cover;
+       background-position: left;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       color: rgb(255, 255, 255);
+
+
+      }
+
+      body {
+        background-image: url('tlo10.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+
+
+
+      }
+      .content-section {
+    background-image: url('tlo12.jpg') !important;
+    background-size: cover;
+    }
+
+
+      .title_announcement {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: cursive;
+      }
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        color: #333333;
+      }
+      .dog-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .dog-card {
+        width: 30%;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+      .dog-card:hover {
+        transform: scale(1.05);
+      }
+      .dog-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .dog-card h2 {
+        margin: 0;
+        padding: 10px;
+        font-size: 24px;
+        color: #333;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+      }
+      .dog-card p {
+        margin: 0;
+        padding: 10px;
+        font-size: 18px;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      #wsparcie {
+          background-color: #c78a8a;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          padding: 10px;
+          font-family: Apple Chancery, cursive;
+          position: absolute;
+          right: 0;
+          margin: 30px;
+      }
+
+      .card-body {
+        background-color: rgb(80, 90, 73);
+      }
+
+      .btn {
+        display: inline;
+        color: white !important;
+
+
+      }
+
+
+      <!-- Tutaj dane dot. buttona glownego -->
+
+.colbutton {
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+div[class*=containerbutton] {
+
+          /* display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          color:aqua
+
+          padding: 10px;
+          margin: 10px;
+          background-color: ;
+          */
+  text-align:center;
+  width: auto;
+  height: auto;
+  margin: 15px;
+  padding: 25px;
+  justify-content:space-evenly;
+  display:inline-flex;
+  align-items:center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.containerbutton-2
+{
+    /*background: rgb(200, 240, 162);*/
+ }
+
+/*
+ BUTTON STYLING
+*/
+
+.btnbutton {
+  position: relative;
+
+  color: rgb(255, 255, 255);
+  width: 256px;
+  font-size: 17px;
+  height:auto;
+  word-wrap:break-word;
+  text-align: center;
+  transition: all 0.3s;
+  span {
+    transition: all 0.3s;
+    tranform: scale(1, 1);
+
+  }
+}
+
+.btnbutton::before, .btnbutton::after {
+  content: '';
+  position: absolute;
+
+  transition: all 0.4s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+
+/* BTN TWO */
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.4s;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two:hover::before {
+  animation-name: rotateccw;
+  animation-duration: 3s;
+}
+.btn-two:hover::after, .btn-two:hover::before {
+  left: 96px;
+  width: 64px;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+/* BUTTON 2 */
+
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
+
+div[class*=box] {
+  height: 13.33%;
+  width: 0%;
+  display:flex;
+  justify-content:right;
+  align-items:center;
+}
+
+.box-1 {
+background-color: #720d0d;
+color:white;
+}
+
+
+.btn {
+
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+
+}
+
+
+.btn-one {
+  color: #FFF;
+  color:white;
+
+  transition: all 0.3s;
+  position:relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.2);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+
+/* END OF BUTTON2 */
+
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+ /* border-radius: 10px;
+  border: 2px solid gray;
+  padding: 10px; */
+}
+
+.footer-basic1 {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:1;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+#createNew {
+    padding:8px 5px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+

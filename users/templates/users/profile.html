@@ -1,0 +1,65 @@
+{% extends "psinder/base_profile.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class ="content-section">
+    <div class ="media">
+        <img class ="rounded-circle account-img" src = " {{user.profile.image.url}} ">
+        <div class ="media-body">
+            <h2 class = "account-heading "> Profil {{ user.username }} </h2>
+            <p class ="text-secondary"> {{ user.email }} </p >
+        </div>
+    </div>
+</div>
+
+<form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4"> Informacje</legend>
+             {{ u_form|crispy }}
+             {{ p_form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class ="btn btn-outline-info ml-5" type="submit"> Aktualizuj</button>
+        </div>
+    </form>
+
+<body>
+<style>
+
+.content-section {
+    margin: auto;
+    max-width: 400px; /* Adjust the max-width according to your design */
+    color: rgb(173 143 76);
+    border-radius: 30px;
+}
+
+.rounded-circle.account-img {
+
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(173 143 76);
+}
+
+.media {
+    text-align: center;
+    border: 2px solid rgb(173 143 76);
+    border-radius: 30px;
+    height: 400px;
+    margin: auto;
+    padding: 20px; /* Adjust the padding according to your design */
+
+}
+
+
+
+</style>
+
+</body>
+
+
+{% endblock content %}
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'users/main.css' %} ">
+
+    <div class="under-logo">
+          <a class="navbar-brand " href="" >
+            <img src="{% static 'foot.png' %}" alt="Logo Psinder" class="foot" > PSINDER </a>
+
+    <title>Tworzenie nowego użytkownika</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Dołącz do nas!</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="email">Adres email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">Hasło:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="password_confirm">Potwierdź hasło:</label>
+        <input type="password" name="password_confirm" id="password_confirm" required>
+        <br>
+        <input type="submit" value="Utwórz konto">
+    </form>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wszystkie zwierzaki</title>
+</head>
+<body>
+About Page - some writing
+
+
+    {% for post in posts %}
+
+<!--    <h1> {{ post.title }}</h1> 
+    <p> By {{post.author }} on {{ post.date_posted }} </p>
+    <p> By {{post.content }} </p>
+-->
+
+
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'psinder/about.css' %} ">
+
+
+
+
+    <div class="grid-container">
+      <div class="card">
+        <img src="{% static 'Pies1.jpg' %}" alt="Opis zdjecia" />
+         <h1> {{ post.title }} </h1>
+          {% load i18n %}
+          {% language 'pl' %}
+          <p> By {{post.author }} on {{ post.date_posted|date:"F d,Y" }}
+             {% endlanguage %}
+          <p> {{post.content }}      </p>
+        <button>Czytaj więcej</button>
+      </div>
+    </div>
+
+
+
+{% endfor %}
+</body>
+
+</html>
