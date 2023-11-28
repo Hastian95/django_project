@@ -121,7 +121,8 @@
 
 
         .under-logo {
-       height: 700px; 1/4 wysokości strony
+       height: auto;
+       margin-bottom: 50px;
        width: 100%;
 
        background-size: cover;

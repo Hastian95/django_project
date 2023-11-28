@@ -8,11 +8,9 @@
     <div class ="media">
         <img class ="rounded-circle account-img" src = " {{user.profile.image.url}} ">
         <div class ="media-body">
-            <h2 class = "account-heading "> Profil {{ user.username } }  </h2>
+            <h2 class = "account-heading "> Profil {{ user.username }}  </h2>
             <p class ="text-secondary"> {{ user.email }} </p >
-        </div>
-    </div>
-</div>
+
 
 <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
@@ -25,13 +23,15 @@
             <button class ="btn btn-outline-info ml-5" type="submit"> Aktualizuj</button>
         </div>
     </form>
-
+        </div>
+    </div>
+</div>
 <body>
 <style>
 
 .content-section {
     margin: auto;
-    max-width: 400px; /* Adjust the max-width according to your design */
+    max-width: fit-content;
     color: rgb(173 143 76);
     border-radius: 30px;
 }
@@ -47,7 +47,7 @@
     text-align: center;
     border: 2px solid rgb(173 143 76);
     border-radius: 30px;
-    height: 400px;
+    height: auto;
     margin: auto;
     padding: 20px; /* Adjust the padding according to your design */
 
