@@ -1,69 +1,40 @@
-html body {
+<style>
 
-        background-color: #ddd;
+body {
+}
+
+tlo-ogloszen {
+background-color: red;
+}
+body {
+        background-image: url('tlo10.jpg');
         background-size: cover;
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-}
+      }
 
-.glowny-uklad {
-
-display: grid;
-grid-template-columns: 60% auto;
-}
-
-      .grid-container-lewy {
+      .grid-container {
          display:grid;
-         margin-left: 20px;
+         width:30%;
+         margin-left:auto;
+         margin-right: auto;
          grid-gap: 12px;
-         padding-bottom: 40px;
-      }
-      .grid-container-prawy {
-
+         padding-bottom: 20px;
       }
 
-.post-details {
-  flex: 1; /* Zajmij dostępną przestrzeń w kontenerze */
-  margin-left: 20px;
-  margin-right: 20px;/* Lub dostosuj margines według potrzeb */
-  text-align: center;
-}
-
-.post-details h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.post-details .par1 {
-  line-height: 3.5;
-  margin-bottom: 15px;
-}
-
-.post-details .par2 {
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.post-details .rounded-circle.profile-img {
-  width: 50px;
-  height: 50px;
-  border: 2px solid rgb(173 143 76);
-}
-
-.card {
-        border-radius: 20px !important;
+    .card {
+        border-radius:20px;
         color: black;
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         align-items: center;
-        border: 1px solid var(--color) !important;
+        border: 3px solid #ccc;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         text-align: center;
         padding: 20px;
-        background-color: white !important;
+        background-color: rgba(37, 98, 10, 0.3);
+
       }
 
       .card img {
@@ -73,7 +44,7 @@ grid-template-columns: 60% auto;
         object-fit: contain;
         /* check later object-fit:contain */
         border-radius: 30px;
-
+        margin-bottom: 10px;
       }
 
       .card h2 {
@@ -83,14 +54,14 @@ grid-template-columns: 60% auto;
 
       .card p {
 
-        line-height: 3.5;
-        margin-bottom: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
       }
 
       .card button {
-        background-color:var(--color);
+        background-color: #4CAF50;
         color: #fff;
-        border: 1px solid rgb(173 143 76);
+        border: none;
         border-radius: 5px;
         padding: 10px;
         font-size: 16px;
@@ -111,22 +82,40 @@ grid-template-columns: 60% auto;
     font-size: 10px;
     display:flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left:auto;
     margin-bottom: 10px;
 }
         .rounded-circle.profile-img {
+
     width: 50px;
     height: 50px;
-    border: 2px solid rgb(173 143 76);
+    border: 3px solid rgb(173 143 76);
 }
 
 
       @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
 
 
+        .description_container {
+          margin-top:80px;
+          /*font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+          font-family: 'Raleway', sans-serif;
+          padding-left:25px;
+          display:flex;
+          text-align: left;
+          width: 500px;
+          font-weight: 400;
 
+        }
 
+        .foot {
+          background-image: url('foot.png');
+          background-size:contain;
+          background-repeat: no-repeat;
+          background-position: 20%;
 
+          height:80px;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
         .logowania {
            margin-left:95%;
@@ -223,14 +212,12 @@ grid-template-columns: 60% auto;
         }
 
 
-        :root {
-        --color: #0d2308}
 
         .under-logo {
        height: auto;
-       margin-bottom: 100px;
+       margin-bottom: 50px;
        width: 100%;
-       background-color:var(--color)!important;
+
        background-size: cover;
        background-position: left;
        font-family:Georgia, 'Times New Roman', Times, serif;
@@ -238,6 +225,9 @@ grid-template-columns: 60% auto;
 
 
       }
+
+
+
 
       .title_announcement {
         max-width: 800px;
@@ -308,10 +298,12 @@ grid-template-columns: 60% auto;
       .btn {
         display: inline;
         color: white !important;
-        margin-top: -150px;
+
 
       }
 
+
+      <!-- Tutaj dane dot. buttona glownego -->
 
 .colbutton {
   height: 100%;
@@ -585,27 +577,6 @@ color:white;
 }
 
 
-element {
-}
-.ui.grid > .row > .column[class*="six wide"], .ui.grid > .column.row > .column[class*="six wide"], .ui.grid > .column[class*="six wide"], .ui.column.grid > .column[class*="six wide"] {
-  width: 37.5% !important;
-}
-.ui.grid > .column:not(.row) {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .column:not(.row), .ui.grid > .row > .column {
-  position: relative;
-  display: inline-block;
-  width: 6.25%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  vertical-align: top;
-}
-.ui.grid > * {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-*, ::before, ::after {
-  box-sizing: inherit;
-}
+
+
+    </style>
