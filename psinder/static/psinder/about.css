@@ -7,6 +7,10 @@ html body {
         padding: 0;
 }
 
+:root {
+        --color: #0d2308}
+
+
 .glowny-uklad {
 
 display: grid;
@@ -223,8 +227,7 @@ grid-template-columns: 60% auto;
         }
 
 
-        :root {
-        --color: #0d2308}
+
 
         .under-logo {
        height: auto;
@@ -580,8 +583,13 @@ color:white;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 #createNew {
-    padding:8px 5px;
+    background-color: var(--color);
+    float:right;
+    position:absolute;
+    top: 310px;
+    left:50%;
     font-family: 'Comfortaa', cursive;
+    padding: 10px 5px;
 }
 
 

@@ -1,0 +1,42 @@
+{% extends "psinder/about.html" %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'psinder/post_detail.css' %} ">
+{% endblock css %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% load i18n %}
+{% language 'pl' %}
+
+
+
+{% block content %}
+
+
+      <div class="card">
+          <img src="{% static 'Pies1.jpg' %}" alt="Opis zdjecia" />
+        <div class="post-details">
+        <h2> {{ object.title }} </h2>
+          <div class="par1"> {{object.content }} </div>
+          <div class="par2">
+              <img class ="rounded-circle profile-img" src = "{{ object.author.profile.image.url }}">
+              Autor: {{object.author }}, {{ object.date_posted|date:"F d,Y" }} </div>
+
+<!--        <article class="media content-section">-->
+<!--            <img class ="rounded-circle profile-img" src = "{{ object.author.profile.image.url }}">-->
+<!--            <div class="media-body">-->
+<!--                <div class="article-metadata">-->
+<!--                    <a class="mr-2" href="#"> {{object.author }} </a>-->
+<!--                    <small class="text-muted"> {{ object.date_posted|date:"F d,Y" }} </small>-->
+<!--                </div>-->
+<!--                <h2 class="article-title"> {{ object.title }} </h2>-->
+<!--                <p class="article-content"> {{ object.content }} </p>-->
+<!--            </div>-->
+<!--        </article>-->
+
+
+{% endblock content %}
+    {% endlanguage %}

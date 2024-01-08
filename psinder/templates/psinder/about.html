@@ -2,17 +2,23 @@
 <head>
 <!DOCTYPE html>
 <html lang="pl">
+{% block css %}
 <link rel="stylesheet" type="text/css" href=" {% static 'psinder/about.css' %} ">
+{% endblock css %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <title>Wszystkie zwierzaki</title>
     <div class="under-logo">
+
           <a class="navbar-brand" href="/"  >
             <img src="{% static 'foot.png' %}" alt="Logo Psinder" class="foot" > PSINDER </a>
 
 {% block logowanie %}
-<div class = "logowania">
+
+<a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" >+ Dodaj ogłoszenie</a>
+
+        <div class = "logowania">
             {% if user.is_authenticated %}
             <div class="box-1">
                 <a class="btn btn-one" href="{% url 'profile' %}"> Profil </a>
@@ -24,24 +30,32 @@
                 <a class="btn btn-one" href="{% url 'register' %}"> <span> Dołącz do nas!</span> </a>
             </div>
             {% endif %}
- </div> </div>
+ </div>
+
+    </div>
+
+
 
 
 {% endblock logowanie %}
 
 </head>
+ {% block content %}
 <body>
+
 <!--    <h1> {{ post.title }}</h1>
     <p> By {{post.author }} on {{ post.date_posted }} </p>
     <p> By {{post.content }} </p>
 -->
 {% load i18n %}
 {% language 'pl' %}
+
 <div class ="glowny-uklad">
 
 
 
 <div class="grid-container-lewy">
+
 {% for post in posts %}
       <div class="card">
           <img src="{% static 'Pies1.jpg' %}" alt="Opis zdjecia" />
@@ -61,6 +75,7 @@
 
 
 <div class="grid-container-prawy">
+
 <h1> <div class="six wide column">
 <div class="center-text">
 <div class="fb-page fb_iframe_widget" data-adapt-container-width="true" data-href="https://www.facebook.com/ratujemyzwierzaki/" data-show-facepile="true" data-small-header="false" data-tabs="timeline" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1479414278777175&amp;container_width=400&amp;href=https%3A%2F%2Fwww.facebook.com%2Fratujemyzwierzaki%2F&amp;locale=pl_PL&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"><span style="vertical-align: bottom; width: 340px; height: 500px;"><iframe name="f1c4561a0276106" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium; visibility: visible; width: 340px; height: 500px;" src="https://www.facebook.com/v2.8/plugins/page.php?adapt_container_width=true&amp;app_id=1479414278777175&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df346f2e0edd35d4%26domain%3Dwww.ratujemyzwierzaki.pl%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.ratujemyzwierzaki.pl%252Ff514a7ff93b62e%26relation%3Dparent.parent&amp;container_width=400&amp;href=https%3A%2F%2Fwww.facebook.com%2Fratujemyzwierzaki%2F&amp;locale=pl_PL&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" class=""></iframe></span></div>
@@ -68,7 +83,7 @@
 </div> </h1>
 </div>
 </div>
-
+{% endblock %}
 <div class="footer-basic">
     <footer>
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
