@@ -48,7 +48,7 @@
           font-family: Apple Chancery, cursive;
         }
 
-        .btn {
+        .btn-one {
         color:white !important;
         }
 
@@ -80,10 +80,16 @@
       .navbar
          {
             font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
-
-
+:root {
+        --color: #0d2308}
+        #createNew {
+    background-color: var(--color);
+    color: white;
         }
+
+
         .navbar-brand
          {
             font-family:cursive;
@@ -216,7 +222,7 @@
       }
 
       .card-body {
-        background-color: rgb(80, 90, 73);
+        background-color: var(--color);
       }
 
       .btn {

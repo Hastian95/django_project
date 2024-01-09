@@ -53,7 +53,19 @@ grid-template-columns: 60% auto;
   border: 2px solid rgb(173 143 76);
 }
 
+       .par2 {
+    font-size: 10px;
+    display:flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+    justify-content: end;
+}
+
+
 .card {
+        max-width: 70%;
+        margin: 30px auto;
         border-radius: 20px !important;
         color: black;
         display: flex;
@@ -107,13 +119,7 @@ grid-template-columns: 60% auto;
     width: 100%;
 }
 
-        .par2 {
-    font-size: 10px;
-    display:flex;
-    align-items: center;
-    margin-left: 150px;
-    margin-bottom: 10px;
-}
+
         .rounded-circle.profile-img {
     width: 50px;
     height: 50px;
@@ -509,6 +515,7 @@ color:white;
 
 
 .footer-basic {
+  padding-top: 100px;
   padding:40px 0;
   background-color:#ffffff;
   color:#4b4c4d;

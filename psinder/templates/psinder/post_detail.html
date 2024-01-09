@@ -1,5 +1,5 @@
 {% extends "psinder/about.html" %}
-
+<html lang="pl">
 {% load static %}
 
 {% block css %}
@@ -13,7 +13,7 @@
 
 
 
-{% block content %}
+{% block post_detail %}
 
 
       <div class="card">
@@ -25,6 +25,8 @@
               <img class ="rounded-circle profile-img" src = "{{ object.author.profile.image.url }}">
               Autor: {{object.author }}, {{ object.date_posted|date:"F d,Y" }} </div>
 
+        </div>
+      </div>
 <!--        <article class="media content-section">-->
 <!--            <img class ="rounded-circle profile-img" src = "{{ object.author.profile.image.url }}">-->
 <!--            <div class="media-body">-->
@@ -38,5 +40,5 @@
 <!--        </article>-->
 
 
-{% endblock content %}
+{% endblock %}
     {% endlanguage %}

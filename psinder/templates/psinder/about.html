@@ -40,15 +40,19 @@
 {% endblock logowanie %}
 
 </head>
- {% block content %}
+
 <body>
+{% load i18n %}
+{% language 'pl' %}
+
+{% block post_detail %}
+ {% block content %}
 
 <!--    <h1> {{ post.title }}</h1>
     <p> By {{post.author }} on {{ post.date_posted }} </p>
     <p> By {{post.content }} </p>
 -->
-{% load i18n %}
-{% language 'pl' %}
+
 
 <div class ="glowny-uklad">
 
@@ -57,20 +61,19 @@
 <div class="grid-container-lewy">
 
 {% for post in posts %}
-      <div class="card">
-          <img src="{% static 'Pies1.jpg' %}" alt="Opis zdjecia" />
-        <div class="post-details">
-        <h2> {{ post.title }} </h2>
+      <div class="card"> <a href=" {% url 'post-detail' post.id %} ">
+          <img src="{% static 'Pies1.jpg' %}" alt="Opis zdjecia" /> </a>
+        <div class="post-details" >
+        <h3>  {{ post.title }}  </h3>
           <div class="par1"> {{post.content }} </div>
           <div class="par2">
               <img class ="rounded-circle profile-img" src = "{{ post.author.profile.image.url }}">
               Autor: {{post.author }}, {{ post.date_posted|date:"F d,Y" }} </div>
         </div>
-
-      <button>Dowiedz się więcej</button>
+          <a href=" {% url 'post-detail' post.id %} "> <button >Dowiedz się więcej</button> </a>
       </div>
     {% endfor %}
-{% endlanguage %}
+
  </div>
 
 
@@ -84,16 +87,14 @@
 </div>
 </div>
 {% endblock %}
+
+{% endblock %}
+{% endlanguage %}
+
 <div class="footer-basic">
     <footer>
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-        </ul>
+
         <p class="copyright">Psinder © 2023</p>
     </footer>
 </div>
