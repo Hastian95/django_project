@@ -1,0 +1,128 @@
+{% extends "psinder/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+
+{% load i18n %}
+{% language 'pl' %}
+
+
+<div class ="content-section">
+    <form method="POST">
+{% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4" label ="W"> Ogłoszenie </legend>
+
+             {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class ="btn btn-outline-info ml-5" type="submit"> Zatwierdź </button>
+        </div>
+    </form>
+
+</div>
+
+<body>
+<style>
+
+.form-group {
+
+    margin: 0;
+    position: ;
+}
+
+.under-logo {
+       height: 1000px;
+       width: auto;
+       background-size: cover;
+       background-position: left;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+
+      }
+btn btn-outline-info {
+color: rgb(244, 243, 163) !important
+
+}
+
+
+fieldset.form-group {
+    width:600px;
+    padding:20px;
+    margin: 20px;
+    border: 0;
+
+}
+
+body .text-muted {
+color: rgb(244, 243, 163) !important
+}
+
+borter-top pt-3 {
+text-align: center;
+
+}
+
+
+
+
+</style>
+</body>
+
+{% endlanguage %}
+{% endblock content %}
+
+
+<!--<style>-->
+
+
+<!--.form-group{-->
+<!--    color: black;-->
+<!--    width: 100%; /* Dostosuj szerokość formularza według potrzeb */-->
+<!--    margin: 5px 0; /* Aby umieścić formularz na środku strony */-->
+
+<!--}-->
+
+<!--.under-logo {-->
+<!--       height: 1000px;-->
+<!--       width: 100%;-->
+<!--       background-size: auto;-->
+<!--       background-position: left;-->
+<!--       font-family:Georgia, 'Times New Roman', Times, serif;-->
+
+<!--      }-->
+
+
+<!--</style>-->
+
+
+
+
+<!--<body>-->
+<!-- <labelnew>-->
+<!--        <form method="POST">-->
+<!--        {% csrf_token %}-->
+<!--               -->
+<!--        <label for="username">Nazwa użytkownika:</label>-->
+<!--        <input type="text" name="username" id="username" required>-->
+<!--        <br>-->
+<!--        <label for="email">Adres email:</label>-->
+<!--        <input type="email" name="email" id="email" required>-->
+<!--        <br>-->
+<!--        <label for="password">Hasło:</label>-->
+<!--        <input type="password" name="password" id="password" required>-->
+<!--        <br>-->
+<!--        <label for="password_confirm">Potwierdź hasło:</label>-->
+<!--        <input type="password" name="password_confirm" id="password_confirm" required>-->
+<!--        <br>-->
+<!--        <input type="submit" value="Utwórz konto">-->
+<!--            </form>-->
+<!--</labelnew>-->
+<!--</body>-->
+
+
+
+
+
+
