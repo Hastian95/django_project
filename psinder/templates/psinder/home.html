@@ -29,7 +29,13 @@
 {% endblock %}
 
 {% block dodaj_ogloszenie %}
-<a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" style="float:right; position: absolute;top:725px;left:85%">+ Dodaj ogłoszenie</a>
+
+ {% if user.is_authenticated %}
+        <a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" style="float:right; position: absolute;top:725px;left:85%" href="{% url 'post-create' %}">+ Dodaj ogłoszenie</a>
+        {% else %}
+        <a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" style="float:right; position: absolute;top:725px;left:85%" href="{% url 'login' %}">+ Dodaj ogłoszenie</a>
+        {% endif %}
+
 <div class="title_announcement">
       <h1>Nasze skarby</h1>
       <div class="dog-list">

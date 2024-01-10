@@ -62,6 +62,13 @@ grid-template-columns: 60% auto;
     justify-content: end;
 }
 
+   .update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
 
 .card {
         max-width: 70%;

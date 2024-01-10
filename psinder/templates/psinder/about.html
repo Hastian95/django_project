@@ -15,9 +15,15 @@
             <img src="{% static 'foot.png' %}" alt="Logo Psinder" class="foot" > PSINDER </a>
 
 {% block logowanie %}
+{% block post_detail_2 %}
 
-<a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" >+ Dodaj ogłoszenie</a>
+        {% if user.is_authenticated %}
+        <a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" href="{% url 'post-create' %}" >+ Dodaj ogłoszenie</a>
+        {% else %}
+        <a asp-action="Create" type="button" class="btn btn-outline-secondary asp-controller="Posts" id="createNew" href="{% url 'login' %}" >+ Dodaj ogłoszenie</a>
+        {% endif %}
 
+        {% endblock %}
         <div class = "logowania">
             {% if user.is_authenticated %}
             <div class="box-1">

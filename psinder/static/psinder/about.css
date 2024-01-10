@@ -20,7 +20,7 @@ grid-template-columns: 60% auto;
       .grid-container-lewy {
          display:grid;
          margin-left: 20px;
-         grid-gap: 12px;
+         grid-gap: 35px;
          padding-bottom: 40px;
       }
       .grid-container-prawy {

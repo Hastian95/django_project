@@ -1,5 +1,5 @@
 {% extends "psinder/base.html" %}
-{% load crispy_forms_tags %}
+
 {% load static %}
 
 
@@ -13,12 +13,13 @@
     <form method="POST">
 {% csrf_token %}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4" label ="W"> Ogłoszenie </legend>
+            <legend class="border-bottom mb-5"> Usuwanie postu </legend>
 
-             {{ form|crispy }}
+          <h2> Czy jesteś pewien, że chcesz usunąć post "{{ object.title }}" ? </h2>
         </fieldset>
-        <div class="form-group">
-            <button class ="btn btn-outline-info ml-5" type="submit"> Zatwierdź </button>
+        <div class="form-group2">
+            <button class ="btn btn-danger " type="submit"> Tak, usuń</button>
+            <a href ="{% url 'post-detail' object.id %}" class ="btn btn-secondary "> Przerwij </a>
         </div>
     </form>
 
@@ -27,12 +28,19 @@
 <body>
 <style>
 
-.form-group {
-
-    margin: 0;
-    position: ;
+.btn-secondary {
+padding-top: 10px;
 }
 
+.form-group2 {
+
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.form-group2 button {
+    margin-right: 30px; /* Dodaj margines po prawej stronie przycisku "Tak, usuń" */
+  }
 .under-logo {
        height: 1000px;
        width: auto;
@@ -48,7 +56,7 @@ color: rgb(244, 243, 163) !important
 
 
 fieldset.form-group {
-    width:600px;
+
     padding:20px;
     margin: 20px;
     border: 0;
