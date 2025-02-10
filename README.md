@@ -1,6 +1,6 @@
 Hello !
 This is web application created to help animals lovers find their own piece of world.
-Dogs and cats ( maybe more?), everything which need someone to take care. It is not business site. 
+Dogs and cats ( maybe more?), everything which needs someone to take care. It is not business site. 
 
 Few screens:
 
